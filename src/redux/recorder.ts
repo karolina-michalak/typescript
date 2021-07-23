@@ -20,10 +20,9 @@ export const stop = (): StopAction => ({
 });
 
 export const selectRecorderState = (rootState: RootState) => rootState.recorder;
-
-export const selectDateStart = (rootState: RootState) => {
+export const selectDateStart = (rootState: RootState) => 
   selectRecorderState(rootState).dateStart;
-};
+
 
 const initialState: RecorderState = {
   dateStart: "",
